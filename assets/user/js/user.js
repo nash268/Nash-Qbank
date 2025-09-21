@@ -4,6 +4,10 @@
         $(".sidebar").toggleClass("show");
     });
 
+    $(".toggleSidebar").on("click", function() {
+        $(".sidebar").toggleClass("show");
+    });
+
     // Apply colors to cards
     const colors = [
         { cardBody: '#FB9F9E', cardTop: '#FCB2B1', button: '#FCC1C0' },
