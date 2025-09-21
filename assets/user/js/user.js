@@ -40,6 +40,7 @@ $(document).ready(function () {
     // Apply stored preference on load
     if (localStorage.getItem("darkMode") === "enabled") {
       body.classList.add("dark-mode");
+	  toggleBtn.checked=true;
     }
 
     toggleBtn.addEventListener("change", () => {
