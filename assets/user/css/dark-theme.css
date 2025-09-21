@@ -22,13 +22,6 @@ body.dark-mode .sidebar {
   color: #ccc !important; /* readable */
 }
 
-body.dark-mode .dashboard_content h3 {
-  color: #787eaf;
-}
-
-body.dark-mode .dashboard_content p {
-  color: #bdb975;
-}
 
 /* Exclude media from double inversion */
 body.dark-mode img,
@@ -40,4 +33,11 @@ body.dark-mode input,
 body.dark-mode img[src^="https://s0.wp.com/latex.php"],
 body.dark-mode img.Wirisformula {
   filter: invert(100%) hue-rotate(180deg) !important; /* restores natural colors */
+}
+
+/* exclude banner text from inversion */
+body.dark-mode .dashboard_content h3,
+body.dark-mode .dashboard_content p {
+  filter: invert(100%) hue-rotate(180deg) !important; /* restores natural colors */
+
 }
