@@ -1,0 +1,41 @@
+    .dark-mode:not(.sidebar) {
+      filter: invert(100%) hue-rotate(180deg) !important;
+      text-shadow: 0px 0px 0px !important;
+      background: rgb(255, 255, 255) !important;
+    }
+
+    .dark-mode:not(.sidebar) img,
+    .dark-mode:not(.sidebar) video,
+    .dark-mode:not(.sidebar) :not(object):not(body) > embed,
+    .dark-mode:not(.sidebar) object,
+    .dark-mode:not(.sidebar) svg image,
+    .dark-mode:not(.sidebar) [style*="background:url"],
+    .dark-mode:not(.sidebar) [style*="background-image:url"],
+    .dark-mode:not(.sidebar) [background],
+    .dark-mode:not(.sidebar) twitterwidget,
+    .dark-mode:not(.sidebar) .sr-reader,
+    .dark-mode:not(.sidebar) .sr-backdrop,
+    .dark-mode:not(.sidebar) iframe:fullscreen,
+    .dark-mode:not(.sidebar) [class="opinary-iframe"] {
+      filter: invert(100%) hue-rotate(180deg) !important;
+    }
+
+    .dark-mode:not(.sidebar) [style*="background:url"] *,
+    .dark-mode:not(.sidebar) [style*="background-image:url"] *,
+    .dark-mode:not(.sidebar) input,
+    .dark-mode:not(.sidebar) [background] *,
+    .dark-mode:not(.sidebar) img[src^="https://s0.wp.com/latex.php"],
+    .dark-mode:not(.sidebar) img.Wirisformula,
+    .dark-mode:not(.sidebar) twitterwidget .NaturalImage-image {
+      filter: none !important;
+    }
+
+    .dark-mode:not(.sidebar) :-webkit-full-screen,
+    .dark-mode:not(.sidebar) :-webkit-full-screen * {
+      filter: none !important;
+    }
+
+    .dark-mode:not(.sidebar) :fullscreen,
+    .dark-mode:not(.sidebar) :fullscreen * {
+      filter: none !important;
+    }
