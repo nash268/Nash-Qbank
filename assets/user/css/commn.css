@@ -46,7 +46,7 @@ a {
     transition: 0.3s ease;
 }
 
-.drafreen-user {
+.top-main-bar-user {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,7 +55,7 @@ a {
     border-radius: 42px 0px 0px 0px;
 }
 
-.drafreen {
+.top-main-bar {
     padding-left: 10px;
     display: flex;
     align-items: center;
