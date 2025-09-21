@@ -22,11 +22,11 @@ body.dark-mode .sidebar {
   color: #ccc !important; /* readable */
 }
 
-body.dark-mode .dashboard-content h3 {
+body.dark-mode .dashboard_content h3 {
   color: #787eaf;
 }
 
-body.dark-mode .dashboard-content p {
+body.dark-mode .dashboard_content p {
   color: #bdb975;
 }
 
