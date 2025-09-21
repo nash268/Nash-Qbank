@@ -1,41 +1,35 @@
-    .dark-mode:not(.sidebar) {
-      filter: invert(100%) hue-rotate(180deg) !important;
-      text-shadow: 0px 0px 0px !important;
-      background: rgb(255, 255, 255) !important;
-    }
+/* Global dark mode */
+body.dark-mode {
+  filter: invert(100%) hue-rotate(180deg) !important;
+  background: #1d1919 !important;
+  text-shadow: none !important;
+}
 
-    .dark-mode:not(.sidebar) img,
-    .dark-mode:not(.sidebar) video,
-    .dark-mode:not(.sidebar) :not(object):not(body) > embed,
-    .dark-mode:not(.sidebar) object,
-    .dark-mode:not(.sidebar) svg image,
-    .dark-mode:not(.sidebar) [style*="background:url"],
-    .dark-mode:not(.sidebar) [style*="background-image:url"],
-    .dark-mode:not(.sidebar) [background],
-    .dark-mode:not(.sidebar) twitterwidget,
-    .dark-mode:not(.sidebar) .sr-reader,
-    .dark-mode:not(.sidebar) .sr-backdrop,
-    .dark-mode:not(.sidebar) iframe:fullscreen,
-    .dark-mode:not(.sidebar) [class="opinary-iframe"] {
-      filter: invert(100%) hue-rotate(180deg) !important;
-    }
+body.dark-mode .sidebar img,
+body.dark-mode .sidebar video,
+body.dark-mode .sidebar embed,
+body.dark-mode .sidebar object,
+body.dark-mode .sidebar svg image {
+  filter: none !important;
+}
 
-    .dark-mode:not(.sidebar) [style*="background:url"] *,
-    .dark-mode:not(.sidebar) [style*="background-image:url"] *,
-    .dark-mode:not(.sidebar) input,
-    .dark-mode:not(.sidebar) [background] *,
-    .dark-mode:not(.sidebar) img[src^="https://s0.wp.com/latex.php"],
-    .dark-mode:not(.sidebar) img.Wirisformula,
-    .dark-mode:not(.sidebar) twitterwidget .NaturalImage-image {
-      filter: none !important;
-    }
 
-    .dark-mode:not(.sidebar) :-webkit-full-screen,
-    .dark-mode:not(.sidebar) :-webkit-full-screen * {
-      filter: none !important;
-    }
+/* Cancel dark mode in sidebar */
+body.dark-mode .sidebar {
+  filter: invert(100%) hue-rotate(
+180deg) !important; /* re-invert to normal */
+  background: #030303 !important;
+  color: #ccc !important; /* readable */
+}
 
-    .dark-mode:not(.sidebar) :fullscreen,
-    .dark-mode:not(.sidebar) :fullscreen * {
-      filter: none !important;
-    }
+/* Exclude media from double inversion */
+body.dark-mode img,
+body.dark-mode video,
+body.dark-mode embed,
+body.dark-mode object,
+body.dark-mode svg image,
+body.dark-mode input,
+body.dark-mode img[src^="https://s0.wp.com/latex.php"],
+body.dark-mode img.Wirisformula {
+  filter: invert(100%) hue-rotate(180deg) !important; /* restores natural colors */
+}
