@@ -1,0 +1,239 @@
+/* ------------------------------13-05-2024------------- */
+/* ----------------------------User Dashbord--------------- */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 280px;
+        position: fixed;
+        top: 0;
+        left: -280px;
+        z-index: 10001;
+        transition: left 0.3s ease-in-out;
+    }
+    .sidebar.show {
+        left: 0px;
+    }
+    .main-content {
+        margin-left: 0 !important;
+    }
+    .sidebar-backdrop {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 9998;
+    }
+    .sidebar-backdrop.active {
+        display: block;
+    }
+    .main_contents_heads {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10000;
+        background-color: #fff;
+        border-bottom: 2px solid #f5f6fa;
+        padding: 10px;
+    }
+    .toggle-bar {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content{
+        margin-left: 0px;
+    }
+    .drafreen-user{
+        width: 98%;
+    }
+    .dashboard_heading{
+        margin: 25px auto;
+        width: 98%;
+    }
+    .dashboard_heading h3{
+        font-size: 14px;
+    }
+    .user-icons{
+        padding-right: 10px;
+    }
+    .left_days{
+        font-size: 11px;
+        width: 50%;
+    }
+    .dashboard_img, .dashboard_content{
+        display: none;
+    }
+    .cards_new{
+        width: 95%;
+        margin: 0px auto;
+    }
+    .card-top-image{
+        display: flex;
+       justify-content: center;
+    }
+    .cards_contents{
+        text-align: center;
+    }
+    .cards_contents h3{
+        font-size: 19px;
+    }
+    .cards-button h3{
+        width: 140px !important;
+    }
+    .cards-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px !important;
+    }
+    .cards-btn-mcq{
+        flex-direction: column;
+    }
+/* --------------------------User Nash Qbank---------------- */
+/* --------------------------MCQ--------------------------- */
+.questions_headers{
+    flex-direction: column;
+}
+.question_content{
+    width: 100%;
+    padding: 30px 15px;
+}
+.heads_left h2{
+    font-size: 16px;
+}
+.heads_left span{
+    font-size: 14px;
+}
+.choose_question, .explanation_button{
+    padding: 10px 9px;
+    font-size: 14px;
+}
+.butons{
+    margin-top: 15px;
+}
+.questions_heading h3{
+    font-size: 14px;
+    line-height: 24px;
+}
+.modal-content{
+    width: 90%;
+    margin-top: 65px;
+}
+.explanations_content p{
+    font-size: 14px;
+}
+.left_days img{
+    width: 30px !important;
+}
+.option-Column-d-flex{
+    flex-direction: column;
+}
+#defaultThumbnail{
+    height: 250px !important;
+}
+#videoPlayer{
+    height: 250px !important;
+}
+.butons{
+    flex-wrap: wrap;
+}
+.flashcards_img img{
+    width: 100% !important;
+}
+.option_answer{
+    gap: 15px;
+    margin: 15px 0px;
+}
+.questions_button{
+    flex-wrap:wrap;
+}
+.flashcards_view{
+    margin-top: 10px !important;
+}
+.flashcards_modal img{
+    width: 85% !important;
+     margin: 41% auto;
+
+}
+.card_counter {
+    top: 26%;
+}
+.main_options label{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.explanation_button{
+    width: 100%;
+}
+.option_column{
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.main_options{
+    font-size: 15px;
+}
+.options_mains{
+    width: 100%;
+}
+.prev_button{
+    width: 150px;
+    padding: 10px;
+}
+.btn{
+    width: 90px;
+}
+.mock-question-time{
+    flex-direction: column;
+}
+/* -------------------------------MCQ------------------- */
+/* -------------------------------user course subscribed------------- */
+th{
+    white-space: nowrap;
+}
+td{
+    white-space: nowrap;
+}
+.subjects_cards{
+    margin-top: 20px;
+}
+/* -----------------------------user course subscribed------------------ */
+/* --------------------------------user video details-------------------- */
+.video-view{
+    flex-direction: column;
+}
+.video-view-left, .video_view_right{
+    width: 100%;
+}
+.video-view-left span{
+    font-size: 13px;
+}
+.video-view-left h3{
+    font-size: 16px;
+}
+.questions_heading{
+    padding: 18px 15px;
+}
+/* --------------------------------user video details-------------------- */
+/* -------------------------------------picture mcq-ques?mcq----------------- */
+.main_picturemcq{
+    flex-direction: column;
+}
+.main_picture_right, .main_picture_left{
+    width: 100%;
+}
+.question_images img{
+    width: 100% !important;
+    height: auto !important;
+}
+
+.model-content{
+    width: 90% !important;
+    margin: 35% auto;
+}
+/* -------------------------------------picture mcq-ques?mcq----------------- */
+}
