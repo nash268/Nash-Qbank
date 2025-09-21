@@ -22,6 +22,14 @@ body.dark-mode .sidebar {
   color: #ccc !important; /* readable */
 }
 
+body.dark-mode .dashboard-content h3 {
+  color: #787eaf;
+}
+
+body.dark-mode .dashboard-content p {
+  color: #bdb975;
+}
+
 /* Exclude media from double inversion */
 body.dark-mode img,
 body.dark-mode video,
