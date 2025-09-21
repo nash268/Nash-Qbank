@@ -1,0 +1,570 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      <link rel="icon" type="image/png" href="https://drafreensacademy.com/assets/images/favicon.png" />
+  <link rel="shortcut icon" href="https://drafreensacademy.com/assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://drafreensacademy.com/assets/user/css/commn.css" />
+    <link rel="stylesheet" href="https://drafreensacademy.com/assets/user/css/style.css" />
+    <link rel="stylesheet" href="https://drafreensacademy.com/assets/user/css/responsive.css" />
+       <link rel="stylesheet" href="https://drafreensacademy.com//assets/css/sec.css" />
+    <script src="https://drafreensacademy.com/assets/user/js/user.js"></script>
+</head>
+<body>
+    <div class="user_dashboards">
+        <nav class="bg-dark text-white sidebar">
+            <div class="logo">
+                <img class="new-logo" src="https://drafreensacademy.com/assets/user/images/new_logo.png" alt="New Logo">
+                <img class="user-logo" src="https://drafreensacademy.com/assets/user/images/user_logo.png" alt="User Logo">
+            </div>
+            <ul class="nav flex-column ">
+                
+
+                              
+                                <li class="nav-item dashboard active ">
+                    <a href="#" class="nav-link text-white">
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_5.png" alt="" class="default-img" />
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_5.png" alt="" class="hover-img" />
+                        Subject Wise MCQ's
+                    </a>
+                </li>
+
+                <!-- <li class="nav-item ">
+                    <a href="https://drafreensacademy.com/user-theory" class="nav-link text-white">
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_2.png" alt="" class="default-img" />
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_2.png" alt="" class="hover-img" />
+                        Theory
+                    </a>
+                </li> -->
+
+                <li class="nav-item ">
+                    <a href="pictureMcqs/picturemcqIndex.html" class="nav-link text-white">
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_3.png" alt="" class="default-img" />
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_3.png" alt="" class="hover-img" />
+                        Picture MCQ's
+                    </a>
+                </li>
+
+                <!-- <li class="nav-item ">
+                    <a href="https://drafreensacademy.com/userrecallmcq" class="nav-link text-white">
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_4.png" alt="" class="default-img" />
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_4.png" alt="" class="hover-img" />
+                        MCQ Recalls
+                    </a>
+                </li> -->
+                                                <li class="nav-item ">
+                    <a href="MockTests/mocktestIndex.html" class="nav-link text-white">
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_5.png" alt="" class="default-img" />
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_5.png" alt="" class="hover-img" />
+                        Mock Test
+                    </a>
+                </li>
+
+
+                <!-- <li class="nav-item ">
+                    <a href="https://drafreensacademy.com/userflashcards" class="nav-link text-white select-manage">
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_8.png" alt="" class="default-img" />
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_8.png" alt="" class="hover-img" />
+                        Flash Cards
+                    </a>
+                </li> -->
+
+                
+
+
+                <!-- <li class="nav-item ">
+                    <a href="https://drafreensacademy.com/usercoursesubscribed" class="nav-link text-white select-manage">
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_6.png" alt="" class="default-img" />
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_6.png" alt="" class="hover-img" />
+                       Dashboard
+                    </a>
+                </li> -->
+
+                <!-- <li class="nav-item logout_left">
+                    <a href="https://drafreensacademy.com/user/logout" class="nav-link text-white last-li">
+                        <div class="log-mains">
+                            <img src="https://drafreensacademy.com/assets/user/images/logout_left.png" alt="" class="default-img"
+                                style="width: 34px;" />
+                            <img src="https://drafreensacademy.com/assets/user/images/logout_left.png" alt="" class="hover-img" />
+                            LOGOUT
+                        </div>
+                        <img src="https://drafreensacademy.com/assets/user/images/log_out.png" alt="Logout">
+
+                    </a>
+                </li> -->
+                
+            </ul>
+        </nav>
+        <div class="main-content">
+            <div class="main_contents_heads">
+                <div class="drafreen-user">
+                    <div class="drafreen">
+                        <div class="toggle-bar " id="toggleSidebar">
+                            <img src="https://drafreensacademy.com/assets/user/images/head_toggle.png" alt="Toggle Sidebar"
+                                id="toggle" />
+                        </div>
+                    </div>
+                    <div class="user-icons">
+                        <!-- <a href="#" class="icon-item">
+                            <img src="https://drafreensacademy.com/assets/user/images/notification.png" alt="notification Icon" />
+                            <span class="counter wishlist-counter">2</span>
+                        </a> -->
+                        <div class="admin-section">
+                            <img src="https://drafreensacademy.com/assets/user/images/user_1.png" alt="" class="adminimg" />
+                            <div class="admin-text">
+                                <h3>Hello,</h3>
+                                <span>Dr. Anon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="mains_right_new">
+                    <div class="dashboard_heading">
+                        <div>
+                            <h3>Subject Wise MCQ's </h3>
+                            <img src="https://drafreensacademy.com/assets/user/images/dashline.png" alt="Line" class="dashline" />
+                        </div>
+                        
+                        <div class="left_days">
+                            <span>
+                                <img src="https://drafreensacademy.com/assets/user/images/calendar_dash.png"
+                                    alt="Calendar Icon" />
+                                unlimited time</span>
+                        </div>
+                    </div>
+
+                    <div class="dashboard_images">
+                        <div class="dashboard_img">
+                            <img src="https://drafreensacademy.com/assets/user/images/dashboards_img.png" alt="Dashboard Image" />
+                        </div>
+                        <div class="dashboard_content">
+                            <h3>Hello Doctor, Welcome!</h3>
+                            <p id="statement"></p>
+                            
+                                                     </div>
+                    </div>
+
+                    <div class="coupon-model" id="modalD" style="display: none;">
+                        <div class="model-content">
+                            <div class="coupon-code">
+                                <img src="https://drafreensacademy.com/assets/images/logouts.png" alt="" width="30%">
+                            </div>
+                            <div class="redeemed">
+                                <h3>Logout Successfully </h3>
+                                <p>You may now close this window.</p>
+
+                                <div class="go-to-home">
+                                    <a href="https://drafreensacademy.com/user/logout" class="btn" onclick="closelogoutmodal()">
+                                        Logout </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                              
+
+
+
+
+                    <script>
+                    function openlogoutmodal() {
+                        document.getElementById('modalD').style.display = 'block';
+                    }
+
+                    function closelogoutmodal() {
+                        document.getElementById('modalD').style.display = 'none';
+                    }
+
+                    </script>
+
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const statements = [
+                            `"The difference between ordinary and extraordinary is that little extra"`,
+                            `"Education is the key to unlocking the golden door of freedom"`,
+                            `"The roots of education are bitter, but the fruit is sweet"`,
+                            `"There are no shortcuts to any place worth going"`,
+                            `"The secret of getting ahead is getting started"`,
+                            `"Learning is the only thing the mind never exhausts, never fears, and never regrets"`,
+                            `"Procrastination is the thief of time"`,
+                            `"Education is the most powerful weapon, which you can use to change the world"`,
+                        ];
+
+                        // Pick a random quote
+                        const randomQuote = statements[Math.floor(Math.random() * statements.length)];
+
+                        // Display the quote in the <p> with ID "statement"
+                        const statementElement = document.getElementById("statement");
+                        if (statementElement) {
+                            statementElement.textContent = randomQuote;
+                        }
+                    });
+                    </script><div class="subjects_cards">
+    <div class="all-subjects">
+                                <div class="cards_new " id="card1">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>GENERAL SURGERY</h3>
+                    </div>
+                    <a href="userquestions/General_surgery_questions.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card2">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>OBSTETRICS AND GYNAECOLOGY</h3>
+                    </div>
+                    <a href="userquestions/Gynae_Obs_questions.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card3">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>PAEDIATRICS</h3>
+                    </div>
+                    <a href="userquestions/Peads_questions.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card4">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>CARDIOLOGY</h3>
+                    </div>
+                    <a href="userquestions/Cardiology_questions.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card5">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>ENDOCRINOLOGY</h3>
+                    </div>
+                    <a href="userquestions/Endocrinology_questions.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card6">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>GASTROENTEROLOGY</h3>
+                    </div>
+                    <a href="userquestions/Gastro_questions.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card7">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>PULMONOLOGY</h3>
+                    </div>
+                    <a href="userquestions/Respiratory_questions.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card8">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>INFECTIOUS DISEASES</h3>
+                    </div>
+                    <a href="userquestions/InfectiousDisease_questions.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card9">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>HAEMATOLOGY - ONCOLOGY</h3>
+                    </div>
+                    <a href="userquestions/Hematology.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card10">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>NEPHROLOGY</h3>
+                    </div>
+                    <a href="userquestions/Nephrology.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card11">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>NEUROLOGY</h3>
+                    </div>
+                    <a href="userquestions/Neurology.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card12">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>EMERGENCY MEDICINE</h3>
+                    </div>
+                    <a href="userquestions/Emergency.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card13">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>RHEUMATOLOGY</h3>
+                    </div>
+                    <a href="userquestions/Rheumatology.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card14">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>UROLOGY</h3>
+                    </div>
+                    <a href="userquestions/Urology.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card15">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>ENT</h3>
+                    </div>
+                    <a href="userquestions/Ent.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card16">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>OPHTHALMOLOGY</h3>
+                    </div>
+                    <a href="userquestions/Ophtho.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card17">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>ORTHOPAEDICS</h3>
+                    </div>
+                    <a href="userquestions/Ortho.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card18">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>DERMATOLOGY</h3>
+                    </div>
+                    <a href="userquestions/Derma.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card19">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>PSYCHIATRY</h3>
+                    </div>
+                    <a href="userquestions/Psychiatry.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card20">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>VASCULAR SURGERY</h3>
+                    </div>
+                    <a href="userquestions/VascularSurgery.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card21">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>ETHICS</h3>
+                    </div>
+                    <a href="userquestions/Ethics.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card22">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>GENETIC DISEASES</h3>
+                    </div>
+                    <a href="userquestions/Genetics.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card23">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>CLINICAL PHARMACOLOGY</h3>
+                    </div>
+                    <a href="userquestions/Pharmacology.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card24">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>CLINICAL ANATOMY</h3>
+                    </div>
+                    <a href="userquestions/Anatomy.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                                        <div class="cards_new " id="card25">
+                    <div class="card-top-image">
+                        <img src="https://drafreensacademy.com/assets/user/images/subjects_top.png" class="card-tops" alt="Top Image" />
+                    </div>
+                    <div class="cards_contents">
+                        <h3>EPIDEMIOLOGY</h3>
+                    </div>
+                    <a href="userquestions/Epidemiology.html">
+                        <div class="cards-button">
+                            <button class="mcq-button new_mcq" >VIEW MCQ'S</button>
+                        </div>
+                    </a>
+                                    </div>
+                            </div>
+</div>
+   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://drafreensacademy.com/assets/user/js/user.js"></script>
+
+   <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const progressBars = document.querySelectorAll(".progress-bar");
+
+    progressBars.forEach(bar => {
+        const startDate = new Date(bar.dataset.start);
+        const endDate = new Date(bar.dataset.end);
+        const currentDate = new Date();
+
+        const totalTime = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+        const timePassed = Math.ceil((currentDate - startDate) / (1000 * 60 * 60 * 24));
+
+        let percent = 0;
+
+        if (totalTime > 0) {
+            percent = Math.min(100, Math.max(0, Math.round((timePassed / totalTime) * 100)));
+        }
+
+
+        bar.style.width = (100 - percent) + "%";
+    });
+});
+</script>
+
+</body>
+
+</html>

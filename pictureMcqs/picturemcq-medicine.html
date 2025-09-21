@@ -1,0 +1,2333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      <link rel="icon" type="image/png" href="https://drafreensacademy.com/assets/images/favicon.png" />
+  <link rel="shortcut icon" href="https://drafreensacademy.com/assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://drafreensacademy.com/assets/user/css/commn.css" />
+    <link rel="stylesheet" href="https://drafreensacademy.com/assets/user/css/style.css" />
+    <link rel="stylesheet" href="https://drafreensacademy.com/assets/user/css/responsive.css" />
+       <link rel="stylesheet" href="https://drafreensacademy.com//assets/css/sec.css" />
+    <script src="https://drafreensacademy.com/assets/user/js/user.js"></script>
+</head>
+<body>
+    <div class="user_dashboards">
+        <nav class="bg-dark text-white sidebar">
+            <div class="logo">
+                <img class="new-logo" src="https://drafreensacademy.com/assets/user/images/new_logo.png" alt="New Logo">
+                <img class="user-logo" src="https://drafreensacademy.com/assets/user/images/user_logo.png" alt="User Logo">
+            </div>
+            <ul class="nav flex-column ">
+                
+
+                              
+                                <li class="nav-item dashboard  ">
+                    <a href="../Index.html" class="nav-link text-white">
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_5.png" alt="" class="default-img" />
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_5.png" alt="" class="hover-img" />
+                        Subject Wise MCQ's
+                    </a>
+                </li>
+
+                <li class="nav-item ">
+                    <a href="https://drafreensacademy.com/user-theory" class="nav-link text-white">
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_2.png" alt="" class="default-img" />
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_2.png" alt="" class="hover-img" />
+                        Theory
+                    </a>
+                </li>
+
+                <li class="nav-item ">
+                    <a href="picturemcqIndex.html" class="nav-link text-white">
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_3.png" alt="" class="default-img" />
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_3.png" alt="" class="hover-img" />
+                        Picture MCQ's
+                    </a>
+                </li>
+
+                <li class="nav-item ">
+                    <a href="https://drafreensacademy.com/userrecallmcq" class="nav-link text-white">
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_4.png" alt="" class="default-img" />
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_4.png" alt="" class="hover-img" />
+                        MCQ Recalls
+                    </a>
+                </li>
+                                                <li class="nav-item ">
+                    <a href="../MockTests/mocktestIndex.html" class="nav-link text-white">
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_5.png" alt="" class="default-img" />
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_5.png" alt="" class="hover-img" />
+                        Mock Test
+                    </a>
+                </li>
+
+
+                <li class="nav-item ">
+                    <a href="https://drafreensacademy.com/userflashcards" class="nav-link text-white select-manage">
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_8.png" alt="" class="default-img" />
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_8.png" alt="" class="hover-img" />
+                        Flash Cards
+                    </a>
+                </li>
+
+                
+
+
+                <li class="nav-item ">
+                    <a href="https://drafreensacademy.com/usercoursesubscribed" class="nav-link text-white select-manage">
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_6.png" alt="" class="default-img" />
+                        <img src="https://drafreensacademy.com/assets/user/images/icon_6.png" alt="" class="hover-img" />
+                       Dashboard
+                    </a>
+                </li>
+
+                <li class="nav-item logout_left">
+                    <a href="https://drafreensacademy.com/user/logout" class="nav-link text-white last-li">
+                        <div class="log-mains">
+                            <img src="https://drafreensacademy.com/assets/user/images/logout_left.png" alt="" class="default-img"
+                                style="width: 34px;" />
+                            <img src="https://drafreensacademy.com/assets/user/images/logout_left.png" alt="" class="hover-img" />
+                            LOGOUT
+                        </div>
+                        <img src="https://drafreensacademy.com/assets/user/images/log_out.png" alt="Logout">
+
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <div class="main_contents_heads">
+                <div class="drafreen-user">
+                    <div class="drafreen">
+                        <div class="toggle-bar " id="toggleSidebar">
+                            <img src="https://drafreensacademy.com/assets/user/images/head_toggle.png" alt="Toggle Sidebar"
+                                id="toggle" />
+                        </div>
+                    </div>
+                    <div class="user-icons">
+                        <!-- <a href="#" class="icon-item">
+                            <img src="https://drafreensacademy.com/assets/user/images/notification.png" alt="notification Icon" />
+                            <span class="counter wishlist-counter">2</span>
+                        </a> -->
+                        <div class="admin-section">
+                            <img src="https://drafreensacademy.com/assets/user/images/user_1.png" alt="" class="adminimg" />
+                            <div class="admin-text">
+                                <h3>Hello,</h3>
+                                <span>Dr. Anon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="mains_right_new">
+                    <div class="dashboard_heading">
+                        <div>
+                            <h3>Picture MCQ's  </h3>
+                            <img src="https://drafreensacademy.com/assets/user/images/dashline.png" alt="Line" class="dashline" />
+                        </div>
+                        
+                        <div class="left_days">
+                            <span>
+                                <img src="https://drafreensacademy.com/assets/user/images/calendar_dash.png"
+                                    alt="Calendar Icon" />
+                                unlimited</span>
+                        </div>
+                    </div>
+
+                    <div class="dashboard_images">
+                        <div class="dashboard_img">
+                            <img src="https://drafreensacademy.com/assets/user/images/dashboards_img.png" alt="Dashboard Image" />
+                        </div>
+                        <div class="dashboard_content">
+                            <h3>Hello Doctor, Welcome!</h3>
+                            <p id="statement"></p>
+                            
+                                                     </div>
+                    </div>
+
+                    <div class="coupon-model" id="modalD" style="display: none;">
+                        <div class="model-content">
+                            <div class="coupon-code">
+                                <img src="https://drafreensacademy.com/assets/images/logouts.png" alt="" width="30%">
+                            </div>
+                            <div class="redeemed">
+                                <h3>Logout Successfully </h3>
+                                <p>You may now close this window.</p>
+
+                                <div class="go-to-home">
+                                    <a href="https://drafreensacademy.com/user/logout" class="btn" onclick="closelogoutmodal()">
+                                        Logout </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                              
+
+
+
+
+                    <script>
+                    function openlogoutmodal() {
+                        document.getElementById('modalD').style.display = 'block';
+                    }
+
+                    function closelogoutmodal() {
+                        document.getElementById('modalD').style.display = 'none';
+                    }
+
+                    </script>
+
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const statements = [
+                            `"The difference between ordinary and extraordinary is that little extra"`,
+                            `"Education is the key to unlocking the golden door of freedom"`,
+                            `"The roots of education are bitter, but the fruit is sweet"`,
+                            `"There are no shortcuts to any place worth going"`,
+                            `"The secret of getting ahead is getting started"`,
+                            `"Learning is the only thing the mind never exhausts, never fears, and never regrets"`,
+                            `"Procrastination is the thief of time"`,
+                            `"Education is the most powerful weapon, which you can use to change the world"`,
+                        ];
+
+                        // Pick a random quote
+                        const randomQuote = statements[Math.floor(Math.random() * statements.length)];
+
+                        // Display the quote in the <p> with ID "statement"
+                        const statementElement = document.getElementById("statement");
+                        if (statementElement) {
+                            statementElement.textContent = randomQuote;
+                        }
+                    });
+                    </script><style>
+    .dashboard_images {
+        display: none !important;
+    }
+    .dashboard_heading {
+        display: none !important;
+    }
+.green-border {
+    background-color: #c3ffc3;
+    color: green;
+    border-radius: 5px;
+}
+
+.red-border {
+    background-color: #ffe0e0;
+    color: #FE7372;
+    border-radius: 5px;
+}
+    
+.options_mains{
+        width: 100%;
+    }
+    
+</style>
+
+<div class="question_section">
+    <div class="questions_headers">
+        <div class="heads_left">            <h2>MEDICINE</h2>
+            
+            <span>(Total Questions - 19)</span>
+        </div>
+        <div class="heads_right">
+            <div class="butons">
+                <button class="choose_question" onclick="openModal()">
+                    <img src="https://drafreensacademy.com/assets/user/images/chossequestion.png" alt="" />
+                    Choose Questions
+                </button>
+                <!--<button class="explanation_button" onclick="toggleExplanation()">-->
+                <!--    <img src="https://drafreensacademy.com/assets/user/images/explanations.png" alt="" />-->
+                <!--    Explanation-->
+                <!--</button>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- Question Section Start -->
+    <div class="question_content">
+        
+            <div class="question" id="question1" 
+          
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.1. What's the ECG finding?</h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714975354.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_5_A" class="optionSpan" type="radio" name="question1" value="A" onchange="checkValid('D', this, 5)"> NSTEMI                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_5_B" class="optionSpan" type="radio" name="question1" value="B" onchange="checkValid('D', this, 5)">
+                                                Stable Angina                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_5_C" class="optionSpan" type="radio" name="question1" value="C" onchange="checkValid('D',this, 5)"> Old Ischemic Changes                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_5_D" class="optionSpan" type="radio" name="question1" value="D" onchange="checkValid('D', this, 5)">Acute STEMI                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation1" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : D</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation1" onclick="toggleExplanation(1)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question2" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.2. Read the ECG</h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714978851.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_6_A" class="optionSpan" type="radio" name="question2" value="A" onchange="checkValid('A', this, 6)"> Atrial Fibrillation                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_6_B" class="optionSpan" type="radio" name="question2" value="B" onchange="checkValid('A', this, 6)">
+                                                Atrial Flutter                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_6_C" class="optionSpan" type="radio" name="question2" value="C" onchange="checkValid('A',this, 6)">  SVT                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_6_D" class="optionSpan" type="radio" name="question2" value="D" onchange="checkValid('A', this, 6)"> Ventricular Tachycardia                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation2" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : A</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation2" onclick="toggleExplanation(2)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question3" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.3. What's the diagnosis from the ECG?</h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714978969.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_7_A" class="optionSpan" type="radio" name="question3" value="A" onchange="checkValid('C', this, 7)"> Acute STEMI                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_7_B" class="optionSpan" type="radio" name="question3" value="B" onchange="checkValid('C', this, 7)">
+                                                Pulmonary embolism                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_7_C" class="optionSpan" type="radio" name="question3" value="C" onchange="checkValid('C',this, 7)"> Acute pericarditis                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_7_D" class="optionSpan" type="radio" name="question3" value="D" onchange="checkValid('C', this, 7)"> Supraventricular tachycardia                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation3" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : C</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation3" onclick="toggleExplanation(3)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question4" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.4. What's the CXR finding?</h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714979107.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_8_A" class="optionSpan" type="radio" name="question4" value="A" onchange="checkValid('D', this, 8)"> Empyema                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_8_B" class="optionSpan" type="radio" name="question4" value="B" onchange="checkValid('D', this, 8)">
+                                                 Pneumonia                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_8_C" class="optionSpan" type="radio" name="question4" value="C" onchange="checkValid('D',this, 8)"> Cavity                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_8_D" class="optionSpan" type="radio" name="question4" value="D" onchange="checkValid('D', this, 8)">Aspiration                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation4" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : D</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation4" onclick="toggleExplanation(4)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question5" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.5. What's the CXR finding?</h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714979291.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_9_A" class="optionSpan" type="radio" name="question5" value="A" onchange="checkValid('C', this, 9)"> Tuberculosis                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_9_B" class="optionSpan" type="radio" name="question5" value="B" onchange="checkValid('C', this, 9)">
+                                                Aspergillosis                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_9_C" class="optionSpan" type="radio" name="question5" value="C" onchange="checkValid('C',this, 9)"> Bilateral infiltration                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_9_D" class="optionSpan" type="radio" name="question5" value="D" onchange="checkValid('C', this, 9)">Pleural effusion                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation5" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : C</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation5" onclick="toggleExplanation(5)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question6" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.6.  What's the CXR finding?</h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714980614.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_10_A" class="optionSpan" type="radio" name="question6" value="A" onchange="checkValid('A', this, 10)"> Transient Tachypnea of Newborn                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_10_B" class="optionSpan" type="radio" name="question6" value="B" onchange="checkValid('A', this, 10)">
+                                                Cardiomegaly                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_10_C" class="optionSpan" type="radio" name="question6" value="C" onchange="checkValid('A',this, 10)"> Aspiration pneumonia                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_10_D" class="optionSpan" type="radio" name="question6" value="D" onchange="checkValid('A', this, 10)">Normal CXR                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation6" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : A</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation6" onclick="toggleExplanation(6)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question7" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.7. What's the finding on the X ray?</h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714980692.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_11_A" class="optionSpan" type="radio" name="question7" value="A" onchange="checkValid('C', this, 11)"> Osteoporosis                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_11_B" class="optionSpan" type="radio" name="question7" value="B" onchange="checkValid('C', this, 11)">
+                                                Osteoarthritis                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_11_C" class="optionSpan" type="radio" name="question7" value="C" onchange="checkValid('C',this, 11)"> Rheumatoid arthritis                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_11_D" class="optionSpan" type="radio" name="question7" value="D" onchange="checkValid('C', this, 11)"> Psoriatic arthritis                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation7" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : C</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation7" onclick="toggleExplanation(7)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question8" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.8. What's the X ray finding?</h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714980768.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_12_A" class="optionSpan" type="radio" name="question8" value="A" onchange="checkValid('C', this, 12)"> Osteoporosis                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_12_B" class="optionSpan" type="radio" name="question8" value="B" onchange="checkValid('C', this, 12)">
+                                                Osteomyelitis                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_12_C" class="optionSpan" type="radio" name="question8" value="C" onchange="checkValid('C',this, 12)"> Osteoarthritis                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_12_D" class="optionSpan" type="radio" name="question8" value="D" onchange="checkValid('C', this, 12)"> Rheumatoid Arthritis                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation8" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : C</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation8" onclick="toggleExplanation(8)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question9" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.9. What's the finding?</h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714980849.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_13_A" class="optionSpan" type="radio" name="question9" value="A" onchange="checkValid('A', this, 13)"> Iron deficiency anemia                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_13_B" class="optionSpan" type="radio" name="question9" value="B" onchange="checkValid('A', this, 13)">
+                                                Thallasemia                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_13_C" class="optionSpan" type="radio" name="question9" value="C" onchange="checkValid('A',this, 13)"> Lead poisoning                                              </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_13_D" class="optionSpan" type="radio" name="question9" value="D" onchange="checkValid('A', this, 13)">Megaloblastic anemia                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation9" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : A</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation9" onclick="toggleExplanation(9)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question10" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.10. What's the finding?</h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714980924.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_14_A" class="optionSpan" type="radio" name="question10" value="A" onchange="checkValid('B', this, 14)"> IDA                                              </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_14_B" class="optionSpan" type="radio" name="question10" value="B" onchange="checkValid('B', this, 14)">
+                                                Hereditary spherocytosis                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_14_C" class="optionSpan" type="radio" name="question10" value="C" onchange="checkValid('B',this, 14)"> Lead poisoning                                              </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_14_D" class="optionSpan" type="radio" name="question10" value="D" onchange="checkValid('B', this, 14)">Megaloblastic anemia                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation10" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : B</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation10" onclick="toggleExplanation(10)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question11" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.11. What's the finding?</h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714981094.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_15_A" class="optionSpan" type="radio" name="question11" value="A" onchange="checkValid('D', this, 15)"> IDA                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_15_B" class="optionSpan" type="radio" name="question11" value="B" onchange="checkValid('D', this, 15)">
+                                                 Hereditary spherocytosis                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_15_C" class="optionSpan" type="radio" name="question11" value="C" onchange="checkValid('D',this, 15)"> Lead poisoning                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_15_D" class="optionSpan" type="radio" name="question11" value="D" onchange="checkValid('D', this, 15)"> Megaloblastic anemia                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation11" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : D</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation11" onclick="toggleExplanation(11)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question12" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.12.  What's the finding?</h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714981183.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_16_A" class="optionSpan" type="radio" name="question12" value="A" onchange="checkValid('B', this, 16)"> Leukemia                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_16_B" class="optionSpan" type="radio" name="question12" value="B" onchange="checkValid('B', this, 16)">
+                                                 Sickle cell anemia                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_16_C" class="optionSpan" type="radio" name="question12" value="C" onchange="checkValid('B',this, 16)"> Hodgkin's lymphoma                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_16_D" class="optionSpan" type="radio" name="question12" value="D" onchange="checkValid('B', this, 16)"> Hereditary spherocytosis                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation12" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : B</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation12" onclick="toggleExplanation(12)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question13" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.13. What's the finding?</h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714981243.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_17_A" class="optionSpan" type="radio" name="question13" value="A" onchange="checkValid('B', this, 17)"> Lead poisoning                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_17_B" class="optionSpan" type="radio" name="question13" value="B" onchange="checkValid('B', this, 17)">
+                                                 Falciparum malaria                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_17_C" class="optionSpan" type="radio" name="question13" value="C" onchange="checkValid('B',this, 17)"> Vivax malaria                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_17_D" class="optionSpan" type="radio" name="question13" value="D" onchange="checkValid('B', this, 17)">Megaloblastic anemia                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation13" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : B</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation13" onclick="toggleExplanation(13)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question14" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.14.  What's the finding? </h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714981308.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_18_A" class="optionSpan" type="radio" name="question14" value="A" onchange="checkValid('B', this, 18)">  Reed sternberg cells                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_18_B" class="optionSpan" type="radio" name="question14" value="B" onchange="checkValid('B', this, 18)">
+                                                Leukemia                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_18_C" class="optionSpan" type="radio" name="question14" value="C" onchange="checkValid('B',this, 18)"> Sickle cell anemia                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_18_D" class="optionSpan" type="radio" name="question14" value="D" onchange="checkValid('B', this, 18)">Iron Deficiency Anemia                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation14" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : B</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation14" onclick="toggleExplanation(14)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question15" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.15. What's the finding? </h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714981758.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_19_A" class="optionSpan" type="radio" name="question15" value="A" onchange="checkValid('C', this, 19)"> Echinococcosis                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_19_B" class="optionSpan" type="radio" name="question15" value="B" onchange="checkValid('C', this, 19)">
+                                                Flatworm                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_19_C" class="optionSpan" type="radio" name="question15" value="C" onchange="checkValid('C',this, 19)"> Schistosomiasis                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_19_D" class="optionSpan" type="radio" name="question15" value="D" onchange="checkValid('C', this, 19)"> Fungal infection                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation15" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : C</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation15" onclick="toggleExplanation(15)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question16" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.16. What's the finding?  </h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714981816.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_20_A" class="optionSpan" type="radio" name="question16" value="A" onchange="checkValid('A', this, 20)"> Reed sternberg cells                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_20_B" class="optionSpan" type="radio" name="question16" value="B" onchange="checkValid('A', this, 20)">
+                                                Leukemia                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_20_C" class="optionSpan" type="radio" name="question16" value="C" onchange="checkValid('A',this, 20)"> Sickle cell anemia                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_20_D" class="optionSpan" type="radio" name="question16" value="D" onchange="checkValid('A', this, 20)">  Iron Deficiency Anemia                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation16" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : A</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation16" onclick="toggleExplanation(16)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question17" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.17. What's the diagnosis? </h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1714981928.jpeg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_21_A" class="optionSpan" type="radio" name="question17" value="A" onchange="checkValid('C', this, 21)"> Infectious Keratitis                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_21_B" class="optionSpan" type="radio" name="question17" value="B" onchange="checkValid('C', this, 21)">
+                                                Keratosis                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_21_C" class="optionSpan" type="radio" name="question17" value="C" onchange="checkValid('C',this, 21)">  Conjunctivitis                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_21_D" class="optionSpan" type="radio" name="question17" value="D" onchange="checkValid('C', this, 21)"> Glaucoma                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation17" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : C</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation17" onclick="toggleExplanation(17)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question18" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.18. What's the finding on CXR?</h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1715069793.jpg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_77_A" class="optionSpan" type="radio" name="question18" value="A" onchange="checkValid('B', this, 77)"> PDA                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_77_B" class="optionSpan" type="radio" name="question18" value="B" onchange="checkValid('B', this, 77)">
+                                                Ebstein anomaly                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_77_C" class="optionSpan" type="radio" name="question18" value="C" onchange="checkValid('B',this, 77)"> ASD                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_77_D" class="optionSpan" type="radio" name="question18" value="D" onchange="checkValid('B', this, 77)">VSD                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation18" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : B</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation18" onclick="toggleExplanation(18)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+    <div class="question" id="question19" 
+         style="display: none;" 
+         data-locked="false">
+
+        <div class="questions_heading">
+            <h3>Q.19. What's the CXR finding?</h3>
+        </div>
+
+                <div class="main_picturemcq">
+            <div class="main_picture_left">
+                <div class="question_images">
+                    <img src="../uploads/question/demo_questions1715240367.jpg" style="width: 450px;height: 351px;">
+                </div>
+            </div>
+            <div class="main_picture_right">
+                        <div class="option_answer">
+                            <div class="option_column">
+                                <!-- Option A -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> A: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_87_A" class="optionSpan" type="radio" name="question19" value="A" onchange="checkValid('A', this, 87)"> Tuberculosis                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option B -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> B: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_87_B" class="optionSpan" type="radio" name="question19" value="B" onchange="checkValid('A', this, 87)">
+                                                Aspiration                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option_column">
+                                <!-- Option C -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> C: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_87_C" class="optionSpan" type="radio" name="question19" value="C" onchange="checkValid('A',this, 87)"> Empyema                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option D -->
+                                <div class="options_mains">
+                                    <div class="option_sections">
+                                        <div class="option_label">
+                                            <label> D: </label>
+                                        </div>
+                                        <div class="options_mains">
+                                            <label class="main_options">
+                                                <input id="spanOption_87_D" class="optionSpan" type="radio" name="question19" value="D" onchange="checkValid('A', this, 87)">Lobar pneumonia                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="explanations">
+            <div class="explanations_content" id="explanation19" style="display: none;">
+                <div class="exam_result">
+                    <div class="answerss_option">
+                        <h5>Correct Answer : A</h5>
+                    </div>
+                    <div class="close_explanation" id="closeExplanation19" onclick="toggleExplanation(19)">
+                        <i class="ri-close-line" id="closes"></i>
+                    </div>
+                </div>
+                <span>Explanation:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class="video_buttons questions_button">
+            <button class="prev_button" onclick="changeQuestion('prev')"><i class="ri-arrow-left-s-line"></i> Previous</button>
+            <button class="next_button" onclick="changeQuestion('next')">Next <i class="ri-arrow-drop-right-line"></i></button>
+        </div>
+
+            </div>
+
+    </div>
+
+
+</div>
+</div>
+
+<!-- Modal -->
+<div id="chooseQuestionModal" class="modal">
+    <div class="modal-content">
+        <div class="modal_header">
+            <h5 class="modal-title">Choose a Question</h5>
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+        <div class="all_buttons">
+                            <button class="btn" onclick="selectQuestion(1)">Q. 1</button>
+                            <button class="btn" onclick="selectQuestion(2)">Q. 2</button>
+                            <button class="btn" onclick="selectQuestion(3)">Q. 3</button>
+                            <button class="btn" onclick="selectQuestion(4)">Q. 4</button>
+                            <button class="btn" onclick="selectQuestion(5)">Q. 5</button>
+                            <button class="btn" onclick="selectQuestion(6)">Q. 6</button>
+                            <button class="btn" onclick="selectQuestion(7)">Q. 7</button>
+                            <button class="btn" onclick="selectQuestion(8)">Q. 8</button>
+                            <button class="btn" onclick="selectQuestion(9)">Q. 9</button>
+                            <button class="btn" onclick="selectQuestion(10)">Q. 10</button>
+                            <button class="btn" onclick="selectQuestion(11)">Q. 11</button>
+                            <button class="btn" onclick="selectQuestion(12)">Q. 12</button>
+                            <button class="btn" onclick="selectQuestion(13)">Q. 13</button>
+                            <button class="btn" onclick="selectQuestion(14)">Q. 14</button>
+                            <button class="btn" onclick="selectQuestion(15)">Q. 15</button>
+                            <button class="btn" onclick="selectQuestion(16)">Q. 16</button>
+                            <button class="btn" onclick="selectQuestion(17)">Q. 17</button>
+                            <button class="btn" onclick="selectQuestion(18)">Q. 18</button>
+                            <button class="btn" onclick="selectQuestion(19)">Q. 19</button>
+                    </div>
+    </div>
+</div>
+
+
+<div class="coupon-model" id="modalblocks" style="display: none;">
+    <div class="model-content">
+        <div class="coupon-code">
+            <img src="https://drafreensacademy.com/assets/images/logouts.png" alt="" width="30%">
+        </div>
+        <div class="redeemed">
+            <h3>Trial Access Limit Reached</h3>
+<p>You’ve reached the limit of free content. Subscribe to continue learning without restrictions.</p>
+            <div class="go-to-home">
+                <a href="#" onclick="closeTrialModal()" class="btn">Ok</a>
+              <div class="action-buttons">
+                                      <a href="https://drafreensacademy.com/#palns_check" class="btn btn-primary">Subscribe Now</a>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<!--<script src="https://drafreensacademy.com/assets/user/js/user.js"></script>-->
+
+<script>
+    function toggleExplanation() {
+        const explanationSection = document.getElementById(`explanation${currentQuestion}`);
+
+        if (explanationSection.style.display === "none" || explanationSection.style.display === "") {
+            explanationSection.style.display = "block";
+        } else {
+            explanationSection.style.display = "none";
+        }
+    }
+</script>
+<script>
+    let currentQuestion = 1;
+
+function selectQuestion(questionNumber) {
+    const selectedElem = document.getElementById(`question${questionNumber}`);
+    if (selectedElem && selectedElem.dataset.locked === "true") {
+        opneblockmodal(); // Show modal
+        return;
+    }
+
+    for (let i = 1; i <= totalQuestions; i++) {
+        document.getElementById(`question${i}`).style.display = "none";
+    }
+    document.getElementById(`question${questionNumber}`).style.display = "block";
+    currentQuestion = questionNumber;
+    highlightActiveButton(questionNumber);
+    closeModal();
+    closeModal1();
+    updateNavigationButtons();
+}
+
+
+
+    const totalQuestions = 19;
+
+function changeQuestion(direction) {
+    let nextQuestion = currentQuestion;
+
+    if (direction === "next" && currentQuestion < totalQuestions) nextQuestion++;
+    if (direction === "prev" && currentQuestion > 1) nextQuestion--;
+
+    const nextElem = document.getElementById(`question${nextQuestion}`);
+    if (nextElem && nextElem.dataset.locked === "true") {
+        opneblockmodal(); // Instead of alert
+        return;
+    }
+
+    document.getElementById(`question${currentQuestion}`).style.display = "none";
+    currentQuestion = nextQuestion;
+    document.getElementById(`question${currentQuestion}`).style.display = "block";
+    highlightActiveButton(currentQuestion);
+    updateNavigationButtons();
+}
+
+    function highlightActiveButton(questionNumber) {
+        const buttons = document.querySelectorAll('.all_buttons .btn');
+        buttons.forEach(button => {
+            button.classList.remove('active');
+        });
+        const selectedButton = document.querySelector(`.all_buttons .btn:nth-child(${questionNumber})`);
+        selectedButton.classList.add('active');
+    }
+
+    function openModal() {
+        document.getElementById("chooseQuestionModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("chooseQuestionModal").style.display = "none";
+    }
+
+
+  function checkValid(correct, inputElem, id) {
+    // First, remove green-border and red-border from all labels of this question
+    const questionName = inputElem.name; // like 'question1'
+    const options = document.getElementsByName(questionName);
+
+    options.forEach(option => {
+        option.parentElement.classList.remove('green-border', 'red-border');
+        option.parentElement.style.color = '';  // Reset color
+    });
+
+    // Now add class to the label of the selected input
+    const labelElem = inputElem.parentElement; // label wrapping input
+
+    if (inputElem.value === correct) {
+        labelElem.classList.add('green-border');
+        labelElem.style.color = 'green';
+    } else {
+        labelElem.classList.add('red-border');
+        labelElem.style.color = 'red';
+    }
+}
+
+function updateNavigationButtons() {
+    const nextButtons = document.querySelectorAll(".next_button");
+    const prevButtons = document.querySelectorAll(".prev_button");
+
+    nextButtons.forEach(btn => {
+        btn.style.display = (currentQuestion === totalQuestions) ? "none" : "inline-block";
+    });
+
+    prevButtons.forEach(btn => {
+        btn.style.display = (currentQuestion === 1) ? "none" : "inline-block";
+    });
+}
+document.addEventListener("DOMContentLoaded", function () {
+    updateNavigationButtons();
+});
+
+
+function opneblockmodal() {
+    document.getElementById('modalblocks').style.display = 'block';
+}
+function closeblockmodal() {
+    document.getElementById('modalblocks').style.display = 'none';
+}
+
+
+</script>
+</body>
+
+</html>   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://drafreensacademy.com/assets/user/js/user.js"></script>
+
+   <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const progressBars = document.querySelectorAll(".progress-bar");
+
+    progressBars.forEach(bar => {
+        const startDate = new Date(bar.dataset.start);
+        const endDate = new Date(bar.dataset.end);
+        const currentDate = new Date();
+
+        const totalTime = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+        const timePassed = Math.ceil((currentDate - startDate) / (1000 * 60 * 60 * 24));
+
+        let percent = 0;
+
+        if (totalTime > 0) {
+            percent = Math.min(100, Math.max(0, Math.round((timePassed / totalTime) * 100)));
+        }
+
+
+        bar.style.width = (100 - percent) + "%";
+    });
+});
+</script>
+
+</body>
+
+</html>
