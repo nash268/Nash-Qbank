@@ -13638,7 +13638,8 @@ function checkValid(correct, pass, id) {
         correct,
         id,
         totalQuestions,
-        date: new Date().toISOString()
+        date: new Date().toISOString(),
+        url: document.location.href + "?command=showResults"
     };
 
     console.log(result);

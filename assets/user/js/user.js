@@ -35,20 +35,48 @@ $(document).ready(function () {
 
 
 	const body = document.body;
-    const toggleBtn = document.getElementById("toggleDark");
+	const toggleBtn = document.getElementById("toggleDark");
 
-    // Apply stored preference on load
-    if (localStorage.getItem("darkMode") === "enabled") {
-      body.classList.add("dark-mode");
-	  toggleBtn.checked=true;
-    }
+	// Apply stored preference on load
+	if (localStorage.getItem("darkMode") === "enabled") {
+		body.classList.add("dark-mode");
+		toggleBtn.checked = true;
+	}
 
-    toggleBtn.addEventListener("change", () => {
-      body.classList.toggle("dark-mode");
-      if (body.classList.contains("dark-mode")) {
-        localStorage.setItem("darkMode", "enabled");
-      } else {
-        localStorage.setItem("darkMode", "disabled");
-      }
-    });
+	toggleBtn.addEventListener("change", () => {
+		body.classList.toggle("dark-mode");
+		if (body.classList.contains("dark-mode")) {
+			localStorage.setItem("darkMode", "enabled");
+		} else {
+			localStorage.setItem("darkMode", "disabled");
+		}
+	});
+
+
+
+	//function for results in mock tests
+	let url = new URL(window.location.href);
+	let command = url.searchParams.get("command");
+
+	if (command === "showResults") {
+
+		const mockTestName = document.getElementById("mocktest-name").innerText;
+
+		let data = JSON.parse(localStorage.getItem(mockTestName));
+
+		for (let i = 0; i < data.length; i++) {
+			let result = data[i];
+			let correct_option = document.getElementById(`spanOption_${result.id}_${result.correct}`)?.parentElement?.parentElement;
+			let chosen_option = document.getElementById(`spanOption_${result.id}_${result.chosen}`)?.parentElement?.parentElement;
+
+			if (correct_option) {
+				correct_option.classList.add("bg-success", "text-dark");
+			}
+			if (result.chosen != result.correct && chosen_option) {
+				chosen_option.classList.add("bg-danger", "text-dark");
+			}
+		}
+
+	}
+
 });
