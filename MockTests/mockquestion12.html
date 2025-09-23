@@ -260,7 +260,7 @@
 <div class="question_section">
     <div class="questions_headers">
         <div class="heads_left">
-            <h2>MOCK TEST 12</h2>
+            <h2 id="mocktest-name">MOCK TEST 12</h2>
             <span>(Total Questions - 150)</span>
         </div>
         <div class="heads_right">
@@ -13631,7 +13631,31 @@ function updateNavigationButtons() {
 
 // Check answer function (can customize)
 function checkValid(correct, pass, id) {
-    // Your existing logic here if needed
+    let file_name = document.getElementById("mocktest-name").innerText;
+    let result = {
+        status: pass.value === correct ? "correct" : "incorrect",
+        chosen: pass.value,
+        correct,
+        id,
+        totalQuestions,
+        date: new Date().toISOString()
+    };
+
+    console.log(result);
+
+    // Load previous results
+    let answers = JSON.parse(localStorage.getItem(file_name)) || [];
+
+    // Find existing by id
+    let index = answers.findIndex(item => item.id === id);
+
+    if (index !== -1) {
+        answers[index] = result; // overwrite
+    } else {
+        answers.push(result); // new entry
+    }
+
+    localStorage.setItem(file_name, JSON.stringify(answers));
 }
 
 // Timer and other modal related code below
