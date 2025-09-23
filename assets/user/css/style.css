@@ -1129,3 +1129,15 @@ thead th:last-child {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.green-border {
+    background-color: #c3ffc3;
+    color: green;
+    border-radius: 5px;
+}
+
+.red-border {
+    background-color: #ffe0e0;
+    color: #FE7372;
+    border-radius: 5px;
+}

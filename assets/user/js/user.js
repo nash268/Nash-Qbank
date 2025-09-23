@@ -73,14 +73,14 @@ $(document).ready(function () {
 			let chosen_option = document.getElementById(`spanOption_${result.id}_${result.chosen}`)?.parentElement?.parentElement;
 
 			if (correct_option) {
-				correct_option.classList.add("bg-success", "text-dark");
+				correct_option.classList.add("green-border");
 				if (result.chosen == result.correct) {
-					chosen_option.insertAdjacentHTML("beforeend", `<i class="fas fa-check" style="font-size:25px;"></i>`);
+					chosen_option.insertAdjacentHTML("beforeend", `<i class="fas fa-check text-success" style="font-size:25px;"></i>`);
 				}
 			}
 			if (result.chosen != result.correct && chosen_option) {
-				chosen_option.classList.add("bg-danger", "text-dark");
-				chosen_option.insertAdjacentHTML("beforeend", `<i class="fas fa-times" style="font-size:25px;"></i>`);
+				chosen_option.classList.add("red-border");
+				chosen_option.insertAdjacentHTML("beforeend", `<i class="fas fa-times text-danger" style="font-size:25px;"></i>`);
 			}
 		}
 
