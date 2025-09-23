@@ -226,6 +226,8 @@
                 for (let key in localStorage) {
                     if (!localStorage.hasOwnProperty(key))
                         continue;
+                    if (!key.toUpperCase().includes("MOCK")) 
+                        continue;
                     let data;
                     try {
                         data = JSON.parse(localStorage.getItem(key));
