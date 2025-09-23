@@ -244,7 +244,7 @@
                     let incorrect = data.filter(d => d.status === "incorrect").length;
                     let skipped = totalQuestions - attempted;
                     let percent = ((correct / totalQuestions) * 100).toFixed(2);
-                    let url = data.url;
+                    let url = data[0].url;
 
                     // derive date from first entry
                     let date = new Date(data[0].date).toLocaleString();
@@ -273,7 +273,6 @@
                     tbody.insertAdjacentHTML("beforeend", row);
                 }
             }
-
 
             renderResults();
         </script>
