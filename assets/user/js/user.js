@@ -74,9 +74,7 @@ $(document).ready(function () {
 
 			if (correct_option) {
 				correct_option.classList.add("green-border");
-				if (result.chosen == result.correct) {
-					chosen_option.insertAdjacentHTML("beforeend", `<i class="fas fa-check text-success" style="font-size:25px;"></i>`);
-				}
+				chosen_option.insertAdjacentHTML("beforeend", `<i class="fas fa-check text-success" style="font-size:25px;"></i>`);
 			}
 			if (result.chosen != result.correct && chosen_option) {
 				chosen_option.classList.add("red-border");
