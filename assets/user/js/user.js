@@ -74,9 +74,13 @@ $(document).ready(function () {
 
 			if (correct_option) {
 				correct_option.classList.add("bg-success", "text-dark");
+				if (result.chosen == result.correct) {
+					chosen_option.insertAdjacentHTML("beforeend", `<i class="fas fa-check" style="font-size:25px;"></i>`);
+				}
 			}
 			if (result.chosen != result.correct && chosen_option) {
 				chosen_option.classList.add("bg-danger", "text-dark");
+				chosen_option.insertAdjacentHTML("beforeend", `<i class="fas fa-times" style="font-size:25px;"></i>`);
 			}
 		}
 
