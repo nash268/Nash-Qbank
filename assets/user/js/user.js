@@ -59,6 +59,9 @@ $(document).ready(function () {
 	let command = url.searchParams.get("command");
 
 	if (command === "showResults") {
+		document.querySelectorAll(".optionSpan")?.forEach(el => {
+			el.disabled = true;
+		});
 
 		const mockTestName = document.getElementById("mocktest-name").innerText;
 
