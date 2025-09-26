@@ -13595,7 +13595,7 @@ function closeModal() {
 // Update navigation buttons based on current question
 function updateNavigationButtons() {
     const nextOrSubmitBtn = document.getElementById('nextOrSubmitBtn');
-    const submitBtn = document.getElementById('.next_button');
+    const submitBtn = document.querySelector('.next_button');
     const prevBtn = document.querySelector('.prev_button');
 
     // Show/Hide Previous button
@@ -13620,7 +13620,7 @@ function updateNavigationButtons() {
         nextOrSubmitBtn.innerHTML = 'Next <i class="ri-arrow-drop-right-line" id="next_icon"></i>';
         nextOrSubmitBtn.onclick = function() { changeQuestion('next'); };
         nextOrSubmitBtn.style.display = 'inline-block';
-        submitBtn.style.display = 'none';
+        submitBtn.style.display = 'inline-block';
     }
 }
 
