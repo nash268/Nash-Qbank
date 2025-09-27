@@ -1,4 +1,4 @@
-const CACHE_NAME = "Nash-Qbank-cache-81723891";
+const CACHE_NAME = "Nash-Qbank-cache-71861001";
 const APP_PREFIX = "Nash-Qbank_";
 
 // Install event - cache necessary assets

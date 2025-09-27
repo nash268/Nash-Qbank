@@ -240,7 +240,7 @@
                 let incorrect = data.filter(d => d.status === "incorrect").length;
                 let skipped = totalQuestions - attempted;
                 let percent = ((correct / totalQuestions) * 100).toFixed(2);
-                let url = data[0].url;
+                let url = new URL(data[0].url);
 
                 // derive date from first entry
                 let date = new Date(data[0].date).toLocaleString();
@@ -264,7 +264,7 @@
       <td>${skipped}</td>
       <td>${timeTaken}</td>
       <td>${percent}%</td>
-      <td><a href="${url}">view</a></td>
+      <td><a href="${url.pathname + url.search}">view</a></td>
     </tr>`;
                 tbody.insertAdjacentHTML("beforeend", row);
             }
