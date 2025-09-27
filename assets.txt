@@ -1,7 +1,5 @@
-"/Nash-Qbank/service-worker.js",
 "/Nash-Qbank/index.html",
-"/Nash-Qbank/codeswing.json",
-"/Nash-Qbank/README.md",
+"/Nash-Qbank/manifest.json",
 "/Nash-Qbank/user/mocktestlist.html",
 "/Nash-Qbank/pictureMcqs/picturemcq-derma.html",
 "/Nash-Qbank/pictureMcqs/picturemcqIndex.html",
