@@ -79,6 +79,14 @@ $(document).ready(function () {
 			if (result.chosen != result.correct && chosen_option) {
 				chosen_option.classList.add("red-border");
 				chosen_option.insertAdjacentHTML("beforeend", `<i class="fas fa-times text-danger" style="font-size:25px;"></i>`);
+
+				// mark wrong answers in choose question menu
+				document.querySelectorAll("button.btn").forEach(btn => {
+				let match = btn.textContent.trim().match(/^Q\.\s*(\d+)$/);
+				if (match && parseInt(match[1], 10) === (i + 1)) {
+				    btn.classList.add("red-border");
+				  }
+				});
 			}
 		}
 
