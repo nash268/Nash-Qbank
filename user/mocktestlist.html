@@ -1,258 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Dashboard</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-        <link rel="icon" type="image/png" href="../assets/images/smallerlogo.png"/>
-        <link rel="shortcut icon" href="../assets/images/smallerlogo.png" type="image/x-icon"/>
-        <link rel="stylesheet" href="../assets/user/css/commn.css"/>
-        <link rel="stylesheet" href="../assets/user/css/style.css"/>
-        <link rel="stylesheet" href="../assets/user/css/responsive.css"/>
-        <link rel="stylesheet" href="../assets/user/css/dark-theme.css"/>
-        <script src="../assets/user/js/user.js"></script>
-    </head>
-    <body>
-        <div class="user_dashboards">
-            <nav class="text-white sidebar">
-                <div class="logo toggleSidebar">
-                    <img class="new-logo" src="../assets/user/images/smallerlogo.png" alt="New Logo">
-                    <img class="user-logo" src="../assets/user/images/nashlogo.png" alt="User Logo">
-                </div>
-                <ul class="nav flex-column ">
-                    <li class="nav-item dashboard  ">
-                        <a href="../index.html" class="nav-link text-white">
-                            <img src="../assets/user/images/icon_5.png" alt="" class="default-img"/>
-                            <img src="../assets/user/images/icon_5.png" alt="" class="hover-img"/>Subject Wise MCQ's
-                    
-                        
-                        </a>
-                    </li>
-                    <!-- <li class="nav-item ">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../assets/images/smallerlogo.png" />
+    <link rel="shortcut icon" href="../assets/images/smallerlogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/user/css/commn.css" />
+    <link rel="stylesheet" href="../assets/user/css/style.css" />
+    <link rel="stylesheet" href="../assets/user/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/user/css/dark-theme.css" />
+    <script src="../assets/user/js/user.js"></script>
+</head>
+
+<body>
+    <div class="user_dashboards">
+        <nav class="text-white sidebar">
+            <div class="logo toggleSidebar">
+                <img class="new-logo" src="../assets/user/images/smallerlogo.png" alt="New Logo">
+                <img class="user-logo" src="../assets/user/images/nashlogo.png" alt="User Logo">
+            </div>
+            <ul class="nav flex-column ">
+                <li class="nav-item dashboard  ">
+                    <a href="../index.html" class="nav-link text-white">
+                        <img src="../assets/user/images/icon_5.png" alt="" class="default-img" />
+                        <img src="../assets/user/images/icon_5.png" alt="" class="hover-img" />Subject Wise MCQ's
+
+
+                    </a>
+                </li>
+                <!-- <li class="nav-item ">
                     <a href="" class="nav-link text-white">
                         <img src="../assets/user/images/icon_2.png" alt="" class="default-img" />
                         <img src="../assets/user/images/icon_2.png" alt="" class="hover-img" />
                         Theory
                     </a>
                 </li> -->
-                    <li class="nav-item ">
-                        <a href="../pictureMcqs/picturemcqIndex.html" class="nav-link text-white">
-                            <img src="../assets/user/images/icon_3.png" alt="" class="default-img"/>
-                            <img src="../assets/user/images/icon_3.png" alt="" class="hover-img"/>Picture MCQ's
-                    
-                        
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="../userrecallmcq/userrecallmcqindex.html" class="nav-link text-white">
-                            <img src="../assets/user/images/icon_4.png" alt="" class="default-img"/>
-                            <img src="../assets/user/images/icon_4.png" alt="" class="hover-img"/>MCQ Recalls
-                    
-                        
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="../MockTests/mocktestIndex.html" class="nav-link text-white">
-                            <img src="../assets/user/images/icon_5.png" alt="" class="default-img"/>
-                            <img src="../assets/user/images/icon_5.png" alt="" class="hover-img"/>Mock Test
-                    
-                        
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="main-content">
-                <div class="main_contents_heads">
-                    <div class="top-main-bar-user">
-                        <div class="top-main-bar">
-                            <div class="toggle-bar " id="toggleSidebar">
-                                <img src="../assets/user/images/head_toggle.png" alt="Toggle Sidebar" id="toggle"/>
-                            </div>
-                        </div>
-                        <div class="user-icons">
-                            <div>
-                                <input type="checkbox" class="toggleDark" id="toggleDark">
-                                <label for="toggleDark" class="toggleDark-label">
-                                    <i class="fas fa-moon"></i>
-                                    <i class="fas fa-sun"></i>
-                                    <span class="ball"></span>
-                                </label>
-                            </div>
-                            <div class="admin-section">
-                                <img src="../assets/user/images/user_1.png" alt="" class="adminimg"/>
-                                <div class="admin-text">
-                                    <h3>Hello,</h3>
-                                    <span>Dr. Batman</span>
-                                </div>
-                            </div>
+                <li class="nav-item ">
+                    <a href="../pictureMcqs/picturemcqIndex.html" class="nav-link text-white">
+                        <img src="../assets/user/images/icon_3.png" alt="" class="default-img" />
+                        <img src="../assets/user/images/icon_3.png" alt="" class="hover-img" />Picture MCQ's
+
+
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="../userrecallmcq/userrecallmcqindex.html" class="nav-link text-white">
+                        <img src="../assets/user/images/icon_4.png" alt="" class="default-img" />
+                        <img src="../assets/user/images/icon_4.png" alt="" class="hover-img" />MCQ Recalls
+
+
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="../MockTests/mocktestIndex.html" class="nav-link text-white">
+                        <img src="../assets/user/images/icon_5.png" alt="" class="default-img" />
+                        <img src="../assets/user/images/icon_5.png" alt="" class="hover-img" />Mock Test
+
+
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <div class="main_contents_heads">
+                <div class="top-main-bar-user">
+                    <div class="top-main-bar">
+                        <div class="toggle-bar " id="toggleSidebar">
+                            <img src="../assets/user/images/head_toggle.png" alt="Toggle Sidebar" id="toggle" />
                         </div>
                     </div>
-                </div>
-                <div class="content-wrapper">
-                    <div class="mains_right_new">
-                        <div class="dashboard_heading">
-                            <div>
-                                <h3>Result Dashboard </h3>
-                                <img src="../assets/user/images/dashline.png" alt="Line" class="dashline"/>
-                            </div>
+                    <div class="user-icons">
+                        <div>
+                            <input type="checkbox" class="toggleDark" id="toggleDark">
+                            <label for="toggleDark" class="toggleDark-label">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                                <span class="ball"></span>
+                            </label>
                         </div>
-                        <div class="dashboard_images">
-                            <div class="dashboard_img">
-                                <img src="../assets/user/images/dashboards_img.png" alt="Dashboard Image"/>
-                            </div>
-                            <div class="dashboard_content">
-                                <h3>Hello Doctor, Welcome!</h3>
-                                <p id="statement"></p>
-                            </div>
-                        </div>
-                        <div class="coupon-model" id="modalD" style="display: none;">
-                            <div class="model-content">
-                                <div class="coupon-code">
-                                    <img src="../assets/images/logouts.png" alt="" width="30%">
-                                </div>
-                                <div class="redeemed">
-                                    <h3>Logout Successfully </h3>
-                                    <p>You may now close this window.</p>
-                                    <div class="go-to-home">
-                                        <a href="../user/logout" class="btn" onclick="closelogoutmodal()">Logout </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <script>
-                            function openlogoutmodal() {
-                                document.getElementById('modalD').style.display = 'block';
-                            }
-
-                            function closelogoutmodal() {
-                                document.getElementById('modalD').style.display = 'none';
-                            }
-                        </script>
-                        <script>
-                            document.addEventListener("DOMContentLoaded", function() {
-                                const statements = [`"The difference between ordinary and extraordinary is that little extra"`, `"Education is the key to unlocking the golden door of freedom"`, `"The roots of education are bitter, but the fruit is sweet"`, `"There are no shortcuts to any place worth going"`, `"The secret of getting ahead is getting started"`, `"Learning is the only thing the mind never exhausts, never fears, and never regrets"`, `"Procrastination is the thief of time"`, `"Education is the most powerful weapon, which you can use to change the world"`, ];
-
-                                // Pick a random quote
-                                const randomQuote = statements[Math.floor(Math.random() * statements.length)];
-
-                                // Display the quote in the <p> with ID "statement"
-                                const statementElement = document.getElementById("statement");
-                                if (statementElement) {
-                                    statementElement.textContent = randomQuote;
-                                }
-                            });
-                        </script>
-                        <div class="subscribed-user">
-                            <div class="tables_user">
-                                <table id="results">
-                                    <thead>
-                                        <tr>
-                                            <th>Date</th>
-                                            <th>Mock Test</th>
-                                            <th>Total Questions</th>
-                                            <th>Questions Attempted</th>
-                                            <th>Correct Answers</th>
-                                            <th>Incorrect Answers</th>
-                                            <th>Questions Skipped</th>
-                                            <th>Time Taken </th>
-                                            <th>Percent Scored</th>
-                                            <th class="actionss">View</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
+                        <div class="admin-section">
+                            <img src="../assets/user/images/user_1.png" alt="" class="adminimg" />
+                            <div class="admin-text">
+                                <h3>Hello,</h3>
+                                <span>Dr. Batman</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="content-wrapper">
+                <div class="mains_right_new">
+                    <div class="dashboard_heading">
+                        <div>
+                            <h3>Result Dashboard </h3>
+                            <img src="../assets/user/images/dashline.png" alt="Line" class="dashline" />
+                        </div>
+                    </div>
+                    <div class="dashboard_images">
+                        <div class="dashboard_img">
+                            <img src="../assets/user/images/dashboards_img.png" alt="Dashboard Image" />
+                        </div>
+                        <div class="dashboard_content">
+                            <h3>Hello Doctor, Welcome!</h3>
+                            <p id="statement"></p>
+                        </div>
+                    </div>
+                    <div class="coupon-model" id="modalD" style="display: none;">
+                        <div class="model-content">
+                            <div class="coupon-code">
+                                <img src="../assets/images/logouts.png" alt="" width="30%">
+                            </div>
+                            <div class="redeemed">
+                                <h3>Logout Successfully </h3>
+                                <p>You may now close this window.</p>
+                                <div class="go-to-home">
+                                    <a href="../user/logout" class="btn" onclick="closelogoutmodal()">Logout </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        function openlogoutmodal() {
+                            document.getElementById('modalD').style.display = 'block';
+                        }
+
+                        function closelogoutmodal() {
+                            document.getElementById('modalD').style.display = 'none';
+                        }
+                    </script>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const statements = [`"The difference between ordinary and extraordinary is that little extra"`, `"Education is the key to unlocking the golden door of freedom"`, `"The roots of education are bitter, but the fruit is sweet"`, `"There are no shortcuts to any place worth going"`, `"The secret of getting ahead is getting started"`, `"Learning is the only thing the mind never exhausts, never fears, and never regrets"`, `"Procrastination is the thief of time"`, `"Education is the most powerful weapon, which you can use to change the world"`,];
+
+                            // Pick a random quote
+                            const randomQuote = statements[Math.floor(Math.random() * statements.length)];
+
+                            // Display the quote in the <p> with ID "statement"
+                            const statementElement = document.getElementById("statement");
+                            if (statementElement) {
+                                statementElement.textContent = randomQuote;
+                            }
+                        });
+                    </script>
+                    <div class="subscribed-user">
+                        <div class="tables_user">
+                            <table id="results">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Mock Test</th>
+                                        <th>Total Questions</th>
+                                        <th>Questions Attempted</th>
+                                        <th>Correct Answers</th>
+                                        <th>Incorrect Answers</th>
+                                        <th>Questions Skipped</th>
+                                        <th>Time Taken </th>
+                                        <th>Percent Scored</th>
+                                        <th class="actionss">View</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <style>
-            .subject-bar {
-                background-color: #e0e0e0;
-                border-radius: 5px;
-                overflow: hidden;
-                position: relative;
-            }
+    </div>
+    <style>
+        .subject-bar {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
 
-            .progress-bar {
-                background-color: #FF9100;
-                height: 100%;
-                width: 0%;
-                transition: width 0.5s ease-in-out;
-                border-radius: 5px 0 0 5px;
-            }
-        </style>
-        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-        <script src="../assets/user/js/user.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                const progressBars = document.querySelectorAll(".progress-bar");
+        .progress-bar {
+            background-color: #FF9100;
+            height: 100%;
+            width: 0%;
+            transition: width 0.5s ease-in-out;
+            border-radius: 5px 0 0 5px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="../assets/user/js/user.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const progressBars = document.querySelectorAll(".progress-bar");
 
-                progressBars.forEach(bar => {
-                    const startDate = new Date(bar.dataset.start);
-                    const endDate = new Date(bar.dataset.end);
-                    const currentDate = new Date();
+            progressBars.forEach(bar => {
+                const startDate = new Date(bar.dataset.start);
+                const endDate = new Date(bar.dataset.end);
+                const currentDate = new Date();
 
-                    const totalTime = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
-                    const timePassed = Math.ceil((currentDate - startDate) / (1000 * 60 * 60 * 24));
+                const totalTime = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+                const timePassed = Math.ceil((currentDate - startDate) / (1000 * 60 * 60 * 24));
 
-                    let percent = 0;
+                let percent = 0;
 
-                    if (totalTime > 0) {
-                        percent = Math.min(100, Math.max(0, Math.round((timePassed / totalTime) * 100)));
-                    }
-
-                    bar.style.width = (100 - percent) + "%";
+                if (totalTime > 0) {
+                    percent = Math.min(100, Math.max(0, Math.round((timePassed / totalTime) * 100)));
                 }
-                );
-            });
 
-            function renderResults() {
-                let tbody = document.querySelector("#results tbody");
-                tbody.innerHTML = "";
+                bar.style.width = (100 - percent) + "%";
+            }
+            );
+        });
 
-                // iterate all keys (mock test ids) in localStorage
-                for (let key in localStorage) {
-                    if (!localStorage.hasOwnProperty(key))
-                        continue;
-                    if (!key.toUpperCase().includes("MOCK")) 
-                        continue;
-                    let data;
-                    try {
-                        data = JSON.parse(localStorage.getItem(key));
-                    } catch {
-                        continue;
-                    }
-                    if (!Array.isArray(data))
-                        continue;
+        function renderResults() {
+            let tbody = document.querySelector("#results tbody");
+            tbody.innerHTML = "";
 
-                    // aggregate
-                    let totalQuestions = data[0]?.totalQuestions || 0;
-                    let attempted = data.length;
-                    let correct = data.filter(d => d.status === "correct").length;
-                    let incorrect = data.filter(d => d.status === "incorrect").length;
-                    let skipped = totalQuestions - attempted;
-                    let percent = ((correct / totalQuestions) * 100).toFixed(2);
-                    let url = data[0].url;
+            // iterate all keys (mock test ids) in localStorage
+            for (let key in localStorage) {
+                if (!localStorage.hasOwnProperty(key))
+                    continue;
+                if (!key.toUpperCase().includes("MOCK"))
+                    continue;
+                let data;
+                try {
+                    data = JSON.parse(localStorage.getItem(key));
+                } catch {
+                    continue;
+                }
+                if (!Array.isArray(data))
+                    continue;
 
-                    // derive date from first entry
-                    let date = new Date(data[0].date).toLocaleString();
+                // aggregate
+                let totalQuestions = data[0]?.totalQuestions || 0;
+                let attempted = data.length;
+                let correct = data.filter(d => d.status === "correct").length;
+                let incorrect = data.filter(d => d.status === "incorrect").length;
+                let skipped = totalQuestions - attempted;
+                let percent = ((correct / totalQuestions) * 100).toFixed(2);
+                let url = data[0].url;
 
-                    // time taken = diff between first and last record
-                    let start = new Date(data[0].date);
-                    let end = new Date(data[data.length - 1].date);
-                    let diffSec = Math.floor((end - start) / 1000);
-                    let mins = Math.floor(diffSec / 60);
-                    let secs = diffSec % 60;
-                    let timeTaken = `${mins}m ${secs}s`;
+                // derive date from first entry
+                let date = new Date(data[0].date).toLocaleString();
 
-                    // row
-                    let row = `<tr>
+                // time taken = diff between first and last record
+                let start = new Date(data[0].date);
+                let end = new Date(data[data.length - 1].date);
+                let diffSec = Math.floor((end - start) / 1000);
+                let mins = Math.floor(diffSec / 60);
+                let secs = diffSec % 60;
+                let timeTaken = `${mins}m ${secs}s`;
+
+                // row
+                let row = `<tr>
       <td>${date}</td>
       <td>${key}</td>
       <td>${totalQuestions}</td>
@@ -264,11 +266,12 @@
       <td>${percent}%</td>
       <td><a href="${url}">view</a></td>
     </tr>`;
-                    tbody.insertAdjacentHTML("beforeend", row);
-                }
+                tbody.insertAdjacentHTML("beforeend", row);
             }
+        }
 
-            renderResults();
-        </script>
-    </body>
+        renderResults();
+    </script>
+</body>
+
 </html>
