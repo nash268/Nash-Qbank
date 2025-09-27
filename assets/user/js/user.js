@@ -54,7 +54,7 @@ $(document).ready(function () {
 
 
 
-	//function for results in mock tests
+	// function for results in mock tests
 	let url = new URL(window.location.href);
 	let command = url.searchParams.get("command");
 
@@ -64,7 +64,6 @@ $(document).ready(function () {
 		});
 
 		const mockTestName = document.getElementById("mocktest-name").innerText;
-
 		let data = JSON.parse(localStorage.getItem(mockTestName));
 
 		for (let i = 0; i < data.length; i++) {
@@ -76,20 +75,30 @@ $(document).ready(function () {
 				correct_option.classList.add("green-border");
 				correct_option.insertAdjacentHTML("beforeend", `<i class="fas fa-check text-success" style="font-size:25px;"></i>`);
 			}
+
+			// mark wrong choice
 			if (result.chosen != result.correct && chosen_option) {
 				chosen_option.classList.add("red-border");
 				chosen_option.insertAdjacentHTML("beforeend", `<i class="fas fa-times text-danger" style="font-size:25px;"></i>`);
+			}
 
-				// mark wrong answers in choose question menu
-				document.querySelectorAll("button.btn").forEach(btn => {
-				let match = btn.textContent.trim().match(/^Q\.\s*(\d+)$/);
-				if (match && parseInt(match[1], 10) === (i + 1)) {
-				    btn.classList.add("red-border");
-				  }
-				});
+			// mark question menu button
+			if (correct_option) {
+				let question_number = correct_option.closest(".question")?.id.trim().match(/\d+/);
+				if (question_number) {
+					document.querySelectorAll("button.btn").forEach(btn => {
+						let btn_match = btn.textContent.trim().match(/^Q\.\s*(\d+)$/);
+						if (btn_match && parseInt(btn_match[1], 10) === parseInt(question_number[0], 10)) {
+							if (result.chosen === result.correct) {
+								btn.classList.add("green-border");
+							} else {
+								btn.classList.add("red-border");
+							}
+						}
+					});
+				}
 			}
 		}
-
 	}
 
 });
